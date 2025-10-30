@@ -1,5 +1,5 @@
-First Create Folder : Django_Project
-Then Create Another Folder : ecom(mainfolder) [ IN Django_Project FOLDER ]
+First Create Folder : Django_Project </br>
+Then Create Another Folder : ecom(mainfolder) [ IN Django_Project FOLDER ] </br></br>
 
 ----- Open CMD in ecom(mainfolder) -----
 
@@ -17,10 +17,10 @@ Then Create Another Folder : ecom(mainfolder) [ IN Django_Project FOLDER ]
 
 -> (myenv) M:\DJANGO\BACKUP_PROJECT\ecom(mainfolder)\newP> code . [ TO OPEN THAT PROJECT IN VS CODE ]
 
-_ _ _ _ _ PROJECT SUCCESSFULY CREATED AND OPENED IN CODE _ _ _ _ _ 
+_ _ _ _ _ PROJECT SUCCESSFULY CREATED AND OPENED IN CODE _ _ _ _ _ </br>
 
 
------ THIS PROCESS INSIDE THE VS CODE -----
+----- THIS PROCESS INSIDE THE VS CODE -----</br>
 
 First Create New Terminal and then select PROMPT then type following :
 -> (myenv) M:\DJANGO\BACKUP_PROJECT\ecom(mainfolder)\newP> python manage.py runserver
@@ -29,7 +29,7 @@ Then Open Given Link on that Terminal : http://127.0.0.1:8000/ [ THIS IS BASE UR
 
 IN TERMINAL :-
 -> To Stop the Server : CTRL + C [ THEN URL WILL NOT WORK ]
-[ IF WE WANT TO RUN AGAIN SAME PROJECT THEN FOLLOW PREVIOUS STEP ]
+[ IF WE WANT TO RUN AGAIN SAME PROJECT THEN FOLLOW PREVIOUS STEP ]</br>
 
 
 ***** SIMPLY COPY FOLLOWING COMMANDS *****
