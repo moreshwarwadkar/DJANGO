@@ -30,3 +30,25 @@ Then Open Given Link on that Terminal : http://127.0.0.1:8000/ [ THIS IS BASE UR
 IN TERMINAL :-
 -> To Stop the Server : CTRL + C [ THEN URL WILL NOT WORK ]
 [ IF WE WANT TO RUN AGAIN SAME PROJECT THEN FOLLOW PREVIOUS STEP ]
+
+
+***** SIMPLY COPY FOLLOWING COMMANDS *****
+
+<ol>
+  <li>python -m venv myenv</li>
+  <li>myenv\Scripts\activate</li>
+  <li>pip install django</li>
+  <li>pip list (Optional)</li>
+  <li>django-admin startproject ProjectName</li>
+  <li>cd ProjectName</li>
+  <li>code .</li>
+</ol>
+
+
+After Complete this 
+
+<ol>
+  <li>python manage.py runserver</li>
+</ol>
+
+Then Open Given Link on that Terminal
