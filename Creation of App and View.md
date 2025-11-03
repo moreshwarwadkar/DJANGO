@@ -9,6 +9,8 @@
    [ CATEGORIES IS ALSO CALLED AS  DJANGO APPS ]
 
 
+
+
 -----|| Steps TO Create a View ||-----
 
 1) -> from django.http import HttpResponse  [ IMPORT THAT IN A views.py FILE ]
