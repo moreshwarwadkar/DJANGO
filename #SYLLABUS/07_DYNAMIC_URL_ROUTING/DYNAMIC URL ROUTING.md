@@ -9,6 +9,6 @@ DYNAMIC URL ROUTING
 - Go To 'nav.html' File
 - Add this name like this </br>
 
-  <a href="{% url 'ele_home' %}">Electronics</a>
+ # <a href="{% url 'ele_home' %}">Electronics</a>
 </br></br>
   ![UI Screenshot](02_DYNAMIC_ROUTING.png)
