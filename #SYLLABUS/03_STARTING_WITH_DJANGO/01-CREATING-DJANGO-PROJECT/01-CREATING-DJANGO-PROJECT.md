@@ -25,5 +25,5 @@ SETTING UP ENVIRONMENT AND CREATING NEW PROJECT
 
 Done..
 
-<br/> ![UI Screenshot](04_OUTPUT) <br/>
+<br/> ![UI Screenshot](04_OUTPUT.png) <br/>
 
