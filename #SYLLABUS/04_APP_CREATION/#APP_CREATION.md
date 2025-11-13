@@ -13,3 +13,5 @@
 - Add app name `ecom` in `INSTALLED_APPS` List.
 
 </br> ![UI Screenshot](03_APP_REGISTRATION.png) </br>
+
+- `Done App is Successfully Created.`
