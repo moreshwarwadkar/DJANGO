@@ -9,7 +9,7 @@
 
 </br> ![UI Screenshot](02_APP_CREATED.png) </br>
 
-- Go To `' settings.py '` in myproject File.
-- Add app name in `INSTALLED_APPS` List.
+- Go To `' settings.py '` in `myproject` File.
+- Add app name `ecom` in `INSTALLED_APPS` List.
 
 </br> ![UI Screenshot](03_APP_REGISTRATION.png) </br>
