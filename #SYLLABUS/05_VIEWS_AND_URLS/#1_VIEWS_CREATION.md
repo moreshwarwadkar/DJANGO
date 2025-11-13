@@ -6,4 +6,4 @@
 - Create Function ( Function is Also Called as Views )
 - Chech Following Code and Create Function Like That ->
 
-<br/> ![UI Screenshot](01_SC.png) <br/>
+<br/> ![UI Screenshot](01_VIEWS.PY.png) <br/>
