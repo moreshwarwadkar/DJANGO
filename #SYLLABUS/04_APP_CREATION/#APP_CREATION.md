@@ -14,4 +14,4 @@
 
 </br> ![UI Screenshot](03_APP_REGISTRATION.png) </br>
 
-- `Done App is Successfully Created.`
+- `App is Successfully Created.`
