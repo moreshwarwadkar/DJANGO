@@ -24,3 +24,6 @@ SETTING UP ENVIRONMENT AND CREATING NEW PROJECT
 <br/> ![UI Screenshot](03_OPEN_LINK.png) <br/>
 
 Done..
+
+<br/> ![UI Screenshot](04_OUTPUT) <br/>
+
