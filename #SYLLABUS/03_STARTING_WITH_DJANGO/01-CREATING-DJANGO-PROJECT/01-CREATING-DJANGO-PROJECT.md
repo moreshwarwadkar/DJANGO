@@ -13,7 +13,7 @@ SETTING UP ENVIRONMENT AND CREATING NEW PROJECT
 - When we type (` code . `) then VS Code will be Open.
 - Then Open New Terminal and Select Command Prompt. 
 
-  <br/><img width="1920" height="1080" alt="01_SELECT_COMMAND_PROMPT" src="https://github.com/user-attachments/assets/06b109f8-673b-4523-85da-ade23a67cb9b" /><br/>
+<br/><img width="1920" height="1080" alt="01_SELECT_COMMAND_PROMPT" src="https://github.com/user-attachments/assets/06b109f8-673b-4523-85da-ade23a67cb9b" /><br/>
 
  
 - Then Type : `python manage.py runserver`
