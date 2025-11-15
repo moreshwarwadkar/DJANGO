@@ -1,4 +1,4 @@
-PROJECT LEVEL TEMPLATE
+<h2> -----PROJECT LEVEL TEMPLATE----- </h2>
 - Here we create a `templates` Folder in a root directory.
 
 - Then Go To setting.py and add Following : </br></br>
@@ -40,6 +40,7 @@ PROJECT LEVEL TEMPLATE
 </br></br>
 
 DOne..!
+
 
 
 
