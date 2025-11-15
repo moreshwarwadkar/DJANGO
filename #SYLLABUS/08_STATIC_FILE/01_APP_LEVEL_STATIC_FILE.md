@@ -1,4 +1,4 @@
-<h3>----- APP LEVEL STATIC FILE -----</h3>
+<h2>----- APP LEVEL STATIC FILE -----</h2>
 
 - Go To App ( Here we have `ecom` App )
 - Create Folder `static`
