@@ -1,8 +1,18 @@
 PROJECT LEVEL TEMPLATE
-- Here we create a ‘templates’ Folder in a root directory.
-- Then create main.html and nav.html in that file. [ IN ROOT DIRECTORY : templates ]
-- Cut Pest all  ‘’ main.html and nav.html ’’ code in all apps and then pest it in a main.html and nav.html. [ If it is Already Created in Apps ]
-- [ Pest Code in that file Which we recently created in templates folder outside the apps. ] </br>
+- Here we create a `templates` Folder in a root directory.
+- Then create `main.html` and `nav.html` in that file. `[ IN ROOT DIRECTORY : templates ]`
+- Go To `main.html` and write
+   1) `{% load static %}` at the top of the page : 
+   	</br>--> `{% load static %}` is used to enable the use of Django’s `{% static %}` tag so you can include CSS, JS, and image files in your template.</br></br>
+
+  2) `<link rel="stylesheet" href="{% static 'style.css' %}">` :</br>
+   	--> Here We link `stylec.css` CSS File.</br></br>
+  3) `{% include "nav.html" %}` :</br>
+   	--> Here `nav.html` is the Navigation Menu File Name.</br></br>
+   5) `{% block content %}
+    {% endblock content %}` : </br>
+	--> {% block content %}{% endblock content %} is used to create a section in a Django template where child templates can insert their own content when extending a base template.
+  </br></br>
 
 <img width="1920" height="1080" alt="01_PROJECT_LEVEL_TEMPLATE" src="https://github.com/user-attachments/assets/46346a5b-ccb3-4cfe-9797-435b411fa7de" /> </br>
 
@@ -17,4 +27,5 @@ PROJECT LEVEL TEMPLATE
 </br>
 
 DOne..!
+
 
