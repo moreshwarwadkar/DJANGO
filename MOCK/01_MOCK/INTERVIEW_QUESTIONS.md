@@ -209,3 +209,30 @@ def home(request):
 - Yes, you can pass context to templates
 - Use: render(request, template, context_dict)
 - Access values in template using {{ variable_name }}
+
+**-----------------------------</br></br>**
+
+`4) Difference between render() and HttpResponse()?`
+
+🖼 render()
+
+- Used to return an HTML template with data.
+- It loads a template, fills it with context, then returns a response.
+- Easier and commonly used for web pages.
+
+Example:
+
+`return render(request, 'home.html', {'name': 'Unik'})`
+
+📄 HttpResponse()
+
+- Returns raw text (string), HTML, JSON, or any plain response.
+- Does NOT load templates automatically.
+- Used for simple or custom responses.
+
+Example:
+
+`return HttpResponse("Hello World")`
+
+**-----------------------------</br></br>**
+**-----------------------------</br></br>**
