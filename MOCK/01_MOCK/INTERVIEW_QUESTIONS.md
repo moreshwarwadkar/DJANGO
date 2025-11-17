@@ -52,3 +52,25 @@ Here is the answer **in a list**:
 * Add the app name inside `INSTALLED_APPS` in `settings.py`
 * Run the server: `python manage.py runserver`
 * Open the project in browser: `http://127.0.0.1:8000/`
+
+-----------------------------</br></br>
+
+`3) What is the purpose of settings.py, urls.py, and views.py?`
+
+🛠 settings.py
+
+- Stores project configuration.
+- Contains database settings, installed apps, middleware, static file settings, etc.
+- Acts like the control panel of the project.
+
+🌐 urls.py
+
+- Handles the URL routing of the project or app.
+- Maps a URL path to a view function.
+- Acts like a traffic controller telling Django which view should run for a given URL.
+
+👁️ views.py
+
+- Contains functions or class-based views that process user requests.
+- Returns responses (HTML, JSON, text, etc.).
+- Acts as the brain of your app — takes input, processes it, and returns output.
