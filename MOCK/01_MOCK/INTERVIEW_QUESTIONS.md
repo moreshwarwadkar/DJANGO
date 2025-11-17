@@ -41,8 +41,6 @@ Finance Department → payments app</br></br>
 
 `2) How do you create a new Django project and a new app?`
 
-Here is the answer **in a list**:
-
 *  Set-Up Virtual Environmemt: `python -m venv myenv`
 *  Activate Virtual Environment: `myenv\Scripts\activate`
 *  Install Django: `pip install django`
@@ -74,3 +72,99 @@ Here is the answer **in a list**:
 - Contains functions or class-based views that process user requests.
 - Returns responses (HTML, JSON, text, etc.).
 - Acts as the brain of your app — takes input, processes it, and returns output.
+
+-----------------------------</br></br>
+
+`4) Explain the role of the INSTALLED_APPS setting.`
+
+Here are the **points** explaining the role of `INSTALLED_APPS` 👇
+
+* It is a list inside `settings.py`.
+* It tells Django which apps are active in the project.
+* It includes both **built-in Django apps** and **custom apps** you create.
+* If an app is not listed here, Django will **not recognize it**.
+* Only apps inside this list can run **migrations**.
+* Django loads models, signals, templates, and admin features only for apps listed here.
+* Without adding your app to `INSTALLED_APPS`, it **will not work properly** in the project.
+
+-----------------------------</br></br>
+
+`5) What is the difference between project-level urls.py and app-level urls.py?`
+
+| Feature     | Project-level urls.py | App-level urls.py               |
+| ----------- | --------------------- | ------------------------------- |
+| Location    | Project folder        | Inside app folder               |
+| Purpose     | Main routing file     | Handles that app's URLs         |
+| Contains    | Includes app URLs     | Maps views within the app       |
+| Scope       | Whole project         | Single app                      |
+| Reusability | Not reusable          | Can be reused in other projects |
+
+🏗 Project-level urls.py
+
+- Located in the main project folder.
+- Acts as the central URL router for the whole project.
+- Includes the app-level URLs using path() or include().
+
+Example:
+
+path('blog/', include('blog.urls'))
+Controls the main entry points of the website.
+
+⚙️ App-level urls.py
+
+- Located inside each app folder (you create it manually).
+- Contains URLs related only to that specific app.
+- Maps URLs to views inside the same app.
+
+Example:
+
+path('', views.home)
+Makes each app modular and reusable.
+
+<h3>Rendering Templates</h3>
+
+`1) What is the role of the render() function in Django?`
+
+🎯 Role of render() function in Django
+
+- It is used to combine a template (HTML file) with data and return an HTTP response.
+- It takes the request, the template name, and an optional context dictionary.
+- It sends the result back to the browser as a complete HTML page.
+- It simplifies the process of loading templates and returning responses.
+- It automatically uses Django’s template engine.
+
+🧩 Example
+`return render(request, 'home.html', {'name': 'Unik'})`
+
+✔ Loads home.html </br>
+✔ Passes data (name: Unik) </br>
+✔ Returns the final webpage to the user </br></br>
+
+
+`2) What are the parameters of render()?`
+
+The render() function in Django mainly takes three parameters:
+
+1️⃣ request
+
+- The HTTP request object
+- It is always the first parameter
+
+2️⃣ template_name
+
+- The HTML file to be rendered
+- Example: "index.html", "home/about.html"
+
+3️⃣ context (optional)
+
+- A dictionary of data you want to send to the template
+- Example: {'name': 'Unik', 'age': 25}
+- If no data is needed, you can skip it
+
+📌 Full format:
+`render(request, template_name, context=None)`
+
+
+✔ request → Required </br>
+✔ template_name → Required </br>
+✔ context → Optional </br></br>
