@@ -37,7 +37,7 @@ HR Department → users app</br>
 Sales Department → orders app</br>
 Finance Department → payments app</br></br>
 
------------------------------</br></br>
+**-----------------------------</br></br>**
 
 `2) How do you create a new Django project and a new app?`
 
@@ -51,7 +51,7 @@ Finance Department → payments app</br></br>
 * Run the server: `python manage.py runserver`
 * Open the project in browser: `http://127.0.0.1:8000/`
 
------------------------------</br></br>
+**-----------------------------</br></br>**
 
 `3) What is the purpose of settings.py, urls.py, and views.py?`
 
@@ -73,7 +73,7 @@ Finance Department → payments app</br></br>
 - Returns responses (HTML, JSON, text, etc.).
 - Acts as the brain of your app — takes input, processes it, and returns output.
 
------------------------------</br></br>
+**-----------------------------</br></br>**
 
 `4) Explain the role of the INSTALLED_APPS setting.`
 
@@ -87,7 +87,7 @@ Here are the **points** explaining the role of `INSTALLED_APPS` 👇
 * Django loads models, signals, templates, and admin features only for apps listed here.
 * Without adding your app to `INSTALLED_APPS`, it **will not work properly** in the project.
 
------------------------------</br></br>
+**-----------------------------</br></br>**
 
 `5) What is the difference between project-level urls.py and app-level urls.py?`
 
