@@ -123,6 +123,9 @@ Makes each app modular and reusable.
 
 <h3>Rendering Templates</h3>
 
+**-----------------------------</br></br>**
+**-----------------------------</br></br>**
+
 `1) What is the role of the render() function in Django?`
 
 🎯 Role of render() function in Django
@@ -140,6 +143,7 @@ Makes each app modular and reusable.
 ✔ Passes data (name: Unik) </br>
 ✔ Returns the final webpage to the user </br></br>
 
+**-----------------------------</br></br>**
 
 `2) What are the parameters of render()?`
 
@@ -168,3 +172,6 @@ The render() function in Django mainly takes three parameters:
 ✔ request → Required </br>
 ✔ template_name → Required </br>
 ✔ context → Optional </br></br>
+
+**-----------------------------</br></br>**
+
