@@ -35,4 +35,20 @@ Inside a company (project), you can have departments (apps) like:</br></br>
 
 HR Department → users app</br>
 Sales Department → orders app</br>
-Finance Department → payments app</br>
+Finance Department → payments app</br></br>
+
+-----------------------------</br></br>
+
+`2) How do you create a new Django project and a new app?`
+
+Here is the answer **in a list**:
+
+*  Set-Up Virtual Environmemt: `python -m venv myenv`
+*  Activate Virtual Environment: `myenv\Scripts\activate`
+*  Install Django: `pip install django`
+* Create a new project: `django-admin startproject projectname`
+* Go inside the project folder: `cd projectname`
+* Create a new app: `python manage.py startapp appname`
+* Add the app name inside `INSTALLED_APPS` in `settings.py`
+* Run the server: `python manage.py runserver`
+* Open the project in browser: `http://127.0.0.1:8000/`
