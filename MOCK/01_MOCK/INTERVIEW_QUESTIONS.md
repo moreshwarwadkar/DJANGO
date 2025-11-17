@@ -121,10 +121,10 @@ Example:
 path('', views.home)
 Makes each app modular and reusable.
 
-<h3>Rendering Templates</h3>
+**-----------------------------**
+**-----------------------------</br></br>**
 
-**-----------------------------</br></br>**
-**-----------------------------</br></br>**
+<h3>Rendering Templates</h3>
 
 `1) What is the role of the render() function in Django?`
 
@@ -234,5 +234,5 @@ Example:
 
 `return HttpResponse("Hello World")`
 
-**-----------------------------</br></br>**
+**-----------------------------**
 **-----------------------------</br></br>**
