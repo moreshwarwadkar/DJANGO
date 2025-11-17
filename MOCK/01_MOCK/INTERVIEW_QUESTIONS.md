@@ -175,3 +175,37 @@ The render() function in Django mainly takes three parameters:
 
 **-----------------------------</br></br>**
 
+`3) Can you pass context data to templates? How?`
+
+Yes, you can pass context data to templates in Django using the context dictionary inside the render() function.
+
+✅ How to Pass Context Data
+
+- Step 1: In views.py
+
+from django.shortcuts import render
+
+def home(request):
+    data = { </br>
+        'name': 'Unik',</br>
+        'age': 25 </br>
+    }</br>
+    return render(request, 'home.html', data)</br></br>
+
+
+✔ Here, data is the context dictionary
+✔ It is passed to the template
+
+- Step 2: In home.html
+
+`<h1>Hello {{ name }}</h1>`
+`<p>Your age is {{ age }}</p>`
+
+
+✔ `{{ name }} and {{ age }}` will display values from the context
+
+📌 Summary
+
+- Yes, you can pass context to templates
+- Use: render(request, template, context_dict)
+- Access values in template using {{ variable_name }}
