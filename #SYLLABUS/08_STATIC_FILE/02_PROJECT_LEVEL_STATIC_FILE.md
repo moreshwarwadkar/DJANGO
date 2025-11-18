@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6dd0e262-fa34-4566-8c5f-e4e7db280760" /><h2>----- PROJECT LEVEL STATIC -----</h2>
+<h2>----- PROJECT LEVEL STATIC -----</h2>
 
 - Go To Root Directory
 - Create Folder ` static `
