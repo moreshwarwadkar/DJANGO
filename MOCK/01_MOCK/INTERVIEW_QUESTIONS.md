@@ -236,3 +236,201 @@ Example:
 
 **-----------------------------**
 **-----------------------------</br></br>**
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+🚀 Django Interview Questions – Project Setup & Templates
+📌 Django Project Setup & Views
+1️⃣ What is the difference between a Django project and a Django app?
+
+Project → Entire web application (container)
+
+App → A module inside a project performing a specific task
+
+A project can contain multiple apps
+
+Apps are reusable, projects are not
+
+Example: Project = Company, Apps = HR, Sales, Accounts
+
+2️⃣ How do you create a new Django project and a new app?
+
+Create virtual environment
+
+Activate virtual environment
+
+Install Django → pip install django
+
+Create project → django-admin startproject projectname
+
+Move inside → cd projectname
+
+Create app → python manage.py startapp appname
+
+Add app inside INSTALLED_APPS
+
+Run server → python manage.py runserver
+
+3️⃣ What is the purpose of settings.py, urls.py, and views.py?
+File	Purpose
+settings.py	Stores project configuration (database, installed apps, static files, etc.)
+urls.py	Maps URLs to views (routing system)
+views.py	Contains functions/classes that process requests and return responses
+4️⃣ Explain the role of the INSTALLED_APPS setting.
+
+Lists all active apps in the project
+
+Django loads their models, migrations, signals, admin, templates
+
+If an app is not added → Django ignores it
+
+Required for migrations and admin
+
+5️⃣ What is the difference between project-level urls.py and app-level urls.py?
+Project-level	App-level
+Main router for whole project	Handles only one app
+Uses include() to connect apps	Maps URLs to views
+Not reusable	Reusable in other projects
+🎨 Rendering Templates
+6️⃣ What is the role of the render() function in Django?
+
+Combines template + context data and returns HTML
+
+Uses Django’s template engine automatically
+
+Simplifies HTML response handling
+
+7️⃣ What are the parameters of render()?
+render(request, template_name, context=None)
+
+Parameter	Meaning
+request	HTTP request object
+template_name	HTML file
+context	Dictionary of data (optional)
+8️⃣ Difference between render() and HttpResponse()?
+render()	HttpResponse()
+Returns HTML template	Returns plain text/string
+Supports context data	No template rendering
+Most common for pages	Useful for manual responses
+9️⃣ Can you pass context data to templates? How?
+
+YES
+
+Example:
+
+views.py
+
+return render(request, 'home.html', {'name': 'Unik'})
+
+
+home.html
+
+<h1>Hello {{ name }}</h1>
+
+🧱 Template Inheritance
+🔟 What is the use of extends in Django templates?
+
+Used for template inheritance
+
+Allows child template to reuse base layout
+
+Avoids duplicate HTML code
+
+1️⃣1️⃣ What is the purpose of {% block %} tags?
+
+Marks editable sections inside templates
+
+Child templates replace content inside these blocks
+
+1️⃣2️⃣ What happens if a child template does not define a {% block %} that exists in the parent?
+
+Django uses the default content written inside the block in the parent template
+
+1️⃣3️⃣ Can one template extend multiple templates?
+
+❌ NO
+A template can only extend ONE parent template
+
+♻ Template Reusability
+1️⃣4️⃣ What is the use of {% include %} in Django templates?
+
+Inserts another template inside current template
+
+Used for repeating small components (header, footer, menu)
+
+1️⃣5️⃣ Difference between extends and include?
+extends	include
+Parent-child inheritance	Simple insertion
+Defines structure	Repeats reusable code
+Used once per template	Can be used many times
+1️⃣6️⃣ Can you include a template inside another template that already extends a base template?
+
+✔ YES
+Example: A template can extend base.html and include header.html.
+
+📁 Project-Level vs App-Level Templates
+1️⃣7️⃣ What is the difference between project-level templates and app-level templates?
+Project-level	App-level
+Stored in project templates folder	Stored inside each app
+Used across multiple apps	Used only in that app
+Better for shared layout	Better for app-specific pages
+1️⃣8️⃣ When should you keep templates at project-level?
+
+When templates are shared across multiple apps
+
+Example: base.html, navbar.html
+
+1️⃣9️⃣ When should you keep templates at app-level?
+
+When templates belong only to one app
+
+Example: Blog → post_list.html, post_detail.html
+
+2️⃣0️⃣ What happens if both project-level and app-level templates have the same name?
+
+➡ Django uses the first match based on the template search order
+(App-level templates usually get priority if APP_DIRS=True)
+
+🎁 Bonus Conceptual Questions
+2️⃣1️⃣ What is TEMPLATES setting in settings.py?
+
+Controls how Django loads and renders templates
+
+Contains: backend, directories, context processors, APP_DIRS
+
+2️⃣2️⃣ What is APP_DIRS: True in TEMPLATES?
+
+Tells Django to look inside each app’s templates folder
+
+Enables automatic template discovery
+
+2️⃣3️⃣ How does Django find which template to render?
+
+Checks paths listed in TEMPLATES['DIRS']
+Then checks each app’s templates folder (if APP_DIRS=True)
+Uses the first matching filename
+
+2️⃣4️⃣ Can we use plain HTML files in Django without templates?
+
+✔ YES, but
+❌ You cannot use template tags ({{ }}, {% %})
+✔ You can return HTML using HttpResponse()
+
+2️⃣5️⃣ How would you debug a TemplateDoesNotExist error?
+
+Check template name spelling
+Check template folder location
+Ensure APP_DIRS=True
+Check TEMPLATES → DIRS path is correct
+Confirm app is added to INSTALLED_APPS
