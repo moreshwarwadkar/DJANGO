@@ -1,4 +1,4 @@
------ VIEWS CREATION -----
+<h2> ----- VIEWS CREATION ----- </h2>
 
 - Go To App `ecom`
 - Go To `views.py`
