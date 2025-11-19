@@ -48,6 +48,9 @@ Returning Variables
 `def home(request):`</br>    
 `        return render(request,'home.html')` </br></br>
 
+<img width="1920" height="1080" alt="Screenshot 2025-11-19 073748" src="https://github.com/user-attachments/assets/c4887c4b-b9fb-49ef-a1d1-394e0c8e57e5" />
+
+</br></br>
 - Here it will display the data which are included in a `home.html`.
 
 
