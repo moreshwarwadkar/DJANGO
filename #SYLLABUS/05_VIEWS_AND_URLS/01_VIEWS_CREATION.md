@@ -45,17 +45,20 @@ Returning Variables
 
 `from django.shortcuts import render` </br>
 
-`def home(request):`
+`def home(request):`</br>
 `        return render(request,'home.html')` </br></br>
-
-- We have already created `home.html` File in a `teplates` Folder.
-- Here it will display the data which are included in a `home.html`.
 
 <img width="1920" height="1080" alt="Screenshot 2025-11-19 073748" src="https://github.com/user-attachments/assets/c4887c4b-b9fb-49ef-a1d1-394e0c8e57e5" />
 
 </br></br>
 
+- We have already created `home.html` File in a `teplates` Folder.
+- Here it will display the data which are included in a `home.html`.
+- When we run the project then Output will be: `This is Home Page.`</br></br>
 
+<img width="1920" height="1080" alt="Screenshot 2025-11-19 074056" src="https://github.com/user-attachments/assets/342d5b04-ca2b-4848-9c88-f983a6adb854" />
+
+</br></br>
 
 
 1️⃣ from django.shortcuts import render
