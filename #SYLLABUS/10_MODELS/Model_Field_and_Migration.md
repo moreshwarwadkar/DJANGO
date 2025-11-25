@@ -1,6 +1,6 @@
 <h2>Model Field and Migration</h2>
 
-- Firt Go To `models.py` write Following code. </br></br>
+- First Go To `models.py` write Following code. </br></br>
 
 <img width="1920" height="1080" alt="Screenshot 2025-11-25 223005" src="https://github.com/user-attachments/assets/cf183124-cf3a-42ef-aa03-4a7be9ac9f96" /> </br></br>
 
