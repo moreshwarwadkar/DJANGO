@@ -5,7 +5,7 @@
 <img width="1920" height="1080" alt="Screenshot 2025-11-25 223005" src="https://github.com/user-attachments/assets/cf183124-cf3a-42ef-aa03-4a7be9ac9f96" /> </br></br>
 
 - GO TO Terminal and Execute Following Commands:
-  1) `python manage.py makemigration` : It creates a migration file, but does NOT apply it to the database.
+  1) `python manage.py makemigrations` : It creates a migration file, but does NOT apply it to the database.
   2) `python manage.py migrate` : It updates the actual database. </br></br>
 
 - Go To `db.sqlite3`  and Click on Refresh Button. Your Table display here.
