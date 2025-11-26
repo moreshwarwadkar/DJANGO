@@ -67,7 +67,7 @@ Create views for addtask.html :</h3> </br>
 
 - Create URL For view `path('update/<int:pk>/',views.update,name='update'),` </br>
 
-- Add the reference with iD :
+- Add the reference and Pass iD :
 
 <img width="1920" height="1080" alt="Screenshot 2025-11-26 145921" src="https://github.com/user-attachments/assets/4d1b7be7-293e-4e76-aa95-e1041523d274" /> </br></br>
 
@@ -81,13 +81,23 @@ Create views for addtask.html :</h3> </br>
 **Here We Complete Update and Display Updated Data on Screen**
 --------------------------------------------------------------------------------------
 
-<h2>---------- 2) UPDATE ----------</h2>
+<h2>---------- 3) TRASH ----------</h2>
 
- 
+- First Go To views.py file and Create a View for Delete Operation. </br>
+
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 150939" src="https://github.com/user-attachments/assets/936528a0-cfac-44f1-b6c3-75ca101ec83e" /> </br></br>
+
+- Create URL For That View : `path('delete/<int:pk>',views.delete,name='delete'),` </br>
+
+- Add Referenec and Pass iD :
+
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 151132" src="https://github.com/user-attachments/assets/1147150c-382d-4bec-be64-eccabdfc6cca" /> </br></br>
 
 
+**Here We Complete Delete Operation*
+--------------------------------------------------------------------------------------
 
-
+<h2>---------- 3) TRASH ----------</h2>
 
 
 
