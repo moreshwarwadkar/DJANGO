@@ -60,3 +60,47 @@ Create views for addtask.html :</h3> </br>
 - First Create `update.html` and Create Form.
 
 <img width="1920" height="1080" alt="Screenshot 2025-11-26 140655" src="https://github.com/user-attachments/assets/11949569-ded9-437b-8f32-49a4378ab2bc" /> </br></br>
+
+- Create a `View` for update.html: </br>
+
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 145730" src="https://github.com/user-attachments/assets/5bf15fd0-b32d-438e-b6a5-1e06b0948244" /> </br></br>
+
+- Create URL For view `path('update/<int:pk>/',views.update,name='update'),` </br>
+
+- Add the reference with iD :
+
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 145921" src="https://github.com/user-attachments/assets/4d1b7be7-293e-4e76-aa95-e1041523d274" /> </br></br>
+
+- Then Add Values:
+- For Title - `value="{{task.title}}"`
+- For Description - `value="{{task.desc}}"`
+
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 150040" src="https://github.com/user-attachments/assets/97bff624-58fd-42dc-ab80-8701787047a3" /> </br></br>
+
+
+**Here We Complete Update and Display Updated Data on Screen**
+--------------------------------------------------------------------------------------
+
+<h2>---------- 2) UPDATE ----------</h2>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
