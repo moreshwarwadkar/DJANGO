@@ -81,7 +81,7 @@ Create views for addtask.html :</h3> </br>
 **Here We Complete Update and Display Updated Data on Screen**
 --------------------------------------------------------------------------------------
 
-<h2>---------- 3) TRASH ----------</h2>
+<h2>---------- 3) Delete Operation ----------</h2>
 
 - First Go To views.py file and Create a View for Delete Operation. </br>
 
@@ -97,13 +97,13 @@ Create views for addtask.html :</h3> </br>
 **Here We Complete Delete Operation*
 --------------------------------------------------------------------------------------
 
-<h2>---------- 3) TRASH ----------</h2>
+<h2>---------- 4) TRASH ----------</h2>
 
+- First Create `trash.html`
 
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 153124" src="https://github.com/user-attachments/assets/89c3411c-4555-4b45-9460-b24bbdeadf07" /> </br>
 
-
-
-
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 153133" src="https://github.com/user-attachments/assets/f14d27ec-2454-4acc-bb53-08265484498e" /> </br></br>
 
 
 
