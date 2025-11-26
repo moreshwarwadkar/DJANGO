@@ -26,7 +26,7 @@
 
 <h3>3) Create addtask.html :</h3> </br>
 
-<img width="1920" height="1080" alt="Screenshot 2025-11-26 132413" src="https://github.com/user-attachments/assets/fb4f55b2-d89a-43ef-852c-d400db00bca1" /> </br></br>
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 135609" src="https://github.com/user-attachments/assets/42beb74b-0c4b-4420-9403-fd73512d5f4e" /> </br></br>
 
 <h3>4) Create views for addtask.html :</h3> </br>
 
@@ -36,8 +36,13 @@
 - Add in Home Views: `all_task=taskmodel.objects.all()`
 - Add in Home Views : `return render(request,'home.html',{'all_task':all_task})`   : Here Pass the Context</br>
 
-<img width="1920" height="1080" alt="Screenshot 2025-11-26 133319" src="https://github.com/user-attachments/assets/ed1300d3-9136-4019-afe5-4c92cb6797b7" /> </br></br>
+- Write Following Code for addtask Views:
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 135737" src="https://github.com/user-attachments/assets/16ff2953-1349-480a-b91d-5ad7d02ab156" /> </br></br>
 
+- Then Create url for addtask views.
+- To Print the data on a HomePage Write Following Code:
+
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 140030" src="https://github.com/user-attachments/assets/bd4c676c-1d26-460a-9d97-fc905b85bbb9" /> </br></br>
 
 
 
