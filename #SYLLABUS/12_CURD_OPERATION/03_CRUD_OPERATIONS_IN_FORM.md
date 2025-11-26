@@ -24,11 +24,16 @@
 
 <img width="1920" height="1080" alt="Screenshot 2025-11-26 131048" src="https://github.com/user-attachments/assets/752a1a67-80f8-43c8-8be5-3cd6109c0369" /> </br></br>
 
-<h3>3) Create addtask.html :</h3> </br>
+
+**--------------------------------------------------------------------------------------**
+
+<h2>---------- 1) ADD TASK ----------</h2>
+
+- Create `addtask.html` and create a Form</br>
 
 <img width="1920" height="1080" alt="Screenshot 2025-11-26 135609" src="https://github.com/user-attachments/assets/42beb74b-0c4b-4420-9403-fd73512d5f4e" /> </br></br>
 
-<h3>4) Create views for addtask.html :</h3> </br>
+Create views for addtask.html :</h3> </br>
 
 - Firt in `views.py` Add: `from django.shortcuts import render,redirect`  ( Here we Add `redireect` only )
 - Then: `from base.models import taskmodel`
@@ -50,4 +55,8 @@
 **Here We Complete Add Task and Display on Screen**
 --------------------------------------------------------------------------------------
 
+<h2>---------- 2) UPDATE ----------</h2>
 
+- First Create `update.html` and Create Form.
+
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 140655" src="https://github.com/user-attachments/assets/11949569-ded9-437b-8f32-49a4378ab2bc" /> </br></br>
