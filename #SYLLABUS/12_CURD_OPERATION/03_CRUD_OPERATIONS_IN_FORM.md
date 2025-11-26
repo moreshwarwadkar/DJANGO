@@ -1,4 +1,4 @@
-<h2>CRUD Operations in From</h2>
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a9a57b54-ceb1-44ac-9ee4-da67b7a8c01f" /><h2>CRUD Operations in From</h2>
 
 - First Create App (base)
 - Create Template : home.html
@@ -99,18 +99,40 @@ Create views for addtask.html :</h3> </br>
 
 <h2>---------- 4) TRASH ----------</h2>
 
+- Create New Field: `is_delete=models.BooleanField(default=False)` </br>
+
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 153833" src="https://github.com/user-attachments/assets/0f0af4ac-ef74-4ad1-9ecb-08ddf8576b8f" /> </br></br>
+
+
 - First Create `trash.html`
 
 <img width="1920" height="1080" alt="Screenshot 2025-11-26 153124" src="https://github.com/user-attachments/assets/89c3411c-4555-4b45-9460-b24bbdeadf07" /> </br>
 
 <img width="1920" height="1080" alt="Screenshot 2025-11-26 153133" src="https://github.com/user-attachments/assets/f14d27ec-2454-4acc-bb53-08265484498e" /> </br></br>
 
+- Create View For Trash
+
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 153259" src="https://github.com/user-attachments/assets/ca23a0f1-8cb4-42e6-b82b-81096ab6c39b" /> </br></br>
+
+- Update Following Code:
+
+  1) In Delete View
+
+  - ` task.is_delete=True` </br>
+  -  ` task.save()`
+
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 153428" src="https://github.com/user-attachments/assets/12cbc327-9712-456d-9281-b7b0c91b8dd4" /> </br></br>
 
 
+2) IN Home View
+
+- `all_task = taskmodel.objects.filter(is_delete=False)`</br>
+
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 153552" src="https://github.com/user-attachments/assets/f8dc3631-aa61-4984-a307-8ed5adf665d2" /> </br></br>
 
 
+- Create URL For Trash: `path('trash',views.trash,name='trash')` </br></br>
 
-
-
+- Add Reference : `<a href="{% url 'trash' %}">Trash</a>` </br></br>
 
 
