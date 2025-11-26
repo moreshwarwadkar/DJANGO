@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/08a50f06-7816-46e4-8690-dca5e1818802" /><img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d39c73d5-a47d-4506-8860-90d5807ee999" /><img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a9a57b54-ceb1-44ac-9ee4-da67b7a8c01f" /><h2>CRUD Operations in From</h2>
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f927a64a-c395-4b8b-a62b-ce8c7ce3431a" /><h2>CRUD Operations in From</h2>
 
 - First Create App (base)
 - Create Template : home.html
@@ -179,29 +179,13 @@ Create View for Delete All :
 
 <h2>---------- 4) TRASH : 3) Restore All ----------</h2>
 
+Create View For Restore All : 
 
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 164719" src="https://github.com/user-attachments/assets/4009fef9-34dd-427d-b66e-3ceaf78fd9d7" /> </br></br>
 
+- Create URL For `restore_all` view : `path('restore_all',views.restore_all,name='restore_all'),`</br>
 
+- Add Reference : `<a href="{% url 'restore_all' %}" class="btn btn-detail">Restore All</a>`</br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 164938" src="https://github.com/user-attachments/assets/b2c586e5-0cff-440d-ab94-300af2a9809b" /> </br></br>
 
