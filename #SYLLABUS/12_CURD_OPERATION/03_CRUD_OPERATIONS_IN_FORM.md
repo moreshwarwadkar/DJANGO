@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a9a57b54-ceb1-44ac-9ee4-da67b7a8c01f" /><h2>CRUD Operations in From</h2>
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/08a50f06-7816-46e4-8690-dca5e1818802" /><img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d39c73d5-a47d-4506-8860-90d5807ee999" /><img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a9a57b54-ceb1-44ac-9ee4-da67b7a8c01f" /><h2>CRUD Operations in From</h2>
 
 - First Create App (base)
 - Create Template : home.html
@@ -134,5 +134,74 @@ Create views for addtask.html :</h3> </br>
 - Create URL For Trash: `path('trash',views.trash,name='trash')` </br></br>
 
 - Add Reference : `<a href="{% url 'trash' %}">Trash</a>` </br></br>
+
+
+**Here We Complete Trash -*
+--------------------------------------------------------------------------------------
+
+<h2>---------- 4) TRASH : 1) Permanently Delete ----------</h2>
+
+- Create view for Permanently Delete :
+
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 161913" src="https://github.com/user-attachments/assets/0a63a692-69d1-4cf8-b6ef-141dc6b55e4c" /> </br></br>
+
+- Create URL for `p_delete` view : `path('p_delete/<int:pk>',views.p_delete,name='p_delete'),` </br>
+
+- Add Reference : `<a href="{% url 'p_delete' %}" class="btn btn-detail">Delete</a>` </br>
+
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 162958" src="https://github.com/user-attachments/assets/770557ce-6a9f-494c-b5a7-434ff75795c2" /> </br></br>
+
+
+<h2>---------- 4) TRASH : 2) Restore ----------</h2>
+
+- Create view for Restore :
+
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 162554" src="https://github.com/user-attachments/assets/d0954946-c226-449f-97f8-0cc332801a61" /> </br></br>
+
+- Create URL For `restore` view : `path('restore/<int:pk>',views.restore,name='restore'),`</br>
+
+- Add Reference : `<a href="{% url 'restore' i.id%}" class="btn btn-detail">Restore</a>`</br>
+
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 162820" src="https://github.com/user-attachments/assets/d0fbe318-35ae-4634-b3a5-dcf32f874d8c" /> </br></br>
+
+
+<h2>---------- 4) TRASH : 3) Delete All ----------</h2>
+
+Create View for Delete All :
+
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 163232" src="https://github.com/user-attachments/assets/3133e39f-29e7-4d58-aa7d-e6bff9399913" /> </br></br>
+
+- Create URL For `delete_all` view : `path('delete_all',views.delete_all,name='delete_all'),`</br>
+
+- Add Reference : `<a href="{% url 'delete_all' %}" class="btn btn-delete">Delete All </a></h2>`</br>
+
+<img width="1920" height="1080" alt="Screenshot 2025-11-26 163402" src="https://github.com/user-attachments/assets/59b51f7a-77f5-4a4e-a100-2f235b7b5d52" /> </br></br>
+
+<h2>---------- 4) TRASH : 3) Restore All ----------</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
