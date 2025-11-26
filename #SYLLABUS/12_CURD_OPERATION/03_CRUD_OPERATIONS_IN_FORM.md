@@ -147,7 +147,7 @@ Create views for addtask.html :</h3> </br>
 
 - Create URL for `p_delete` view : `path('p_delete/<int:pk>',views.p_delete,name='p_delete'),` </br>
 
-- Add Reference : `<a href="{% url 'p_delete' %}" class="btn btn-detail">Delete</a>` </br>
+- Add Reference : `<a href="{% url 'p_delete' i.id %}" class="btn btn-delete">Delete Task</a>` </br>
 
 <img width="1920" height="1080" alt="Screenshot 2025-11-26 162958" src="https://github.com/user-attachments/assets/770557ce-6a9f-494c-b5a7-434ff75795c2" /> </br></br>
 
