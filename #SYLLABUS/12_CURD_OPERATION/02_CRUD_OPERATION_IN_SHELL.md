@@ -36,3 +36,24 @@ Rohit</br></br>
 
 <h3>2) To Update Records</h3>
 
+`>>> u = student_info.objects.get(id=3)`
+`>>> u.s_add = 'Dubai'`
+`>>> u.save()`
+`>>> ` </br></br>
+
+Here we change the address which has id=3. </br></br>
+
+<h3>2) To Delete Records</h3>
+
+`>>> d = student_info.objects.get(id=4)`
+`>>> d.delete()`
+`(1, {'base.student_info': 1})`     -- It will automatically Generated After Delete then Record, No need to write.
+`>>> `
+
+</br></br>
+- To Delete Mutltiple Records.
+
+`>>> d = student_info.objects.all()`
+`>>> d.delete()`
+`(4, {'base.student_info': 4})`
+`>>>`  </br></br>
