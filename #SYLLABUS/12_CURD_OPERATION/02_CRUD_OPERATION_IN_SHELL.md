@@ -27,7 +27,9 @@ Then it will display the name which has id = 6.
 `...     print(i.s_name)`</br>
 `... `</br></br>
 
-Unik</br>      -- All Names are Displayed.
+-- All Names are Displayed --
+
+Unik</br>      
 Mady Gaikwad</br>
 Rohan</br>
 Pranav</br>
@@ -36,24 +38,24 @@ Rohit</br></br>
 
 <h3>2) To Update Records</h3>
 
-`>>> u = student_info.objects.get(id=3)`
-`>>> u.s_add = 'Dubai'`
-`>>> u.save()`
+`>>> u = student_info.objects.get(id=3)`</br>
+`>>> u.s_add = 'Dubai'`</br>
+`>>> u.save()`</br>
 `>>> ` </br></br>
 
 Here we change the address which has id=3. </br></br>
 
 <h3>2) To Delete Records</h3>
 
-`>>> d = student_info.objects.get(id=4)`
-`>>> d.delete()`
-`(1, {'base.student_info': 1})`     -- It will automatically Generated After Delete then Record, No need to write.
-`>>> `
+`>>> d = student_info.objects.get(id=4)`</br>
+`>>> d.delete()`</br>
+`(1, {'base.student_info': 1})`    -- It will automatically Generated After Delete then Record, No need to write. </br>
+`>>> `</br>
 
 </br></br>
 - To Delete Mutltiple Records.
 
-`>>> d = student_info.objects.all()`
-`>>> d.delete()`
-`(4, {'base.student_info': 4})`
+`>>> d = student_info.objects.all()`</br>
+`>>> d.delete()`</br>
+`(4, {'base.student_info': 4})`</br>
 `>>>`  </br></br>
