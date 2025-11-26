@@ -40,11 +40,14 @@
 <img width="1920" height="1080" alt="Screenshot 2025-11-26 135737" src="https://github.com/user-attachments/assets/16ff2953-1349-480a-b91d-5ad7d02ab156" /> </br></br>
 
 - Then Create url for addtask views.
+- `path('addtask',views.addtask,name='addtask')`
+  
 - To Print the data on a HomePage Write Following Code:
 
 <img width="1920" height="1080" alt="Screenshot 2025-11-26 140030" src="https://github.com/user-attachments/assets/bd4c676c-1d26-460a-9d97-fc905b85bbb9" /> </br></br>
 
 
-
+**Here We Complete Add Task and Display on Screen**
+--------------------------------------------------------------------------------------
 
 
