@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f927a64a-c395-4b8b-a62b-ce8c7ce3431a" /><h2>CRUD Operations in From</h2>
+<h2>CRUD Operations in From</h2>
 
 - First Create App (base)
 - Create Template : home.html
