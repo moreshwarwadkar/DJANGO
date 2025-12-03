@@ -1,0 +1,197 @@
+🔵 1. What is Django? Why is it high-level?
+
+Django is a Python web framework that provides built-in tools like ORM, admin, authentication — that’s why it's called high-level.
+
+🔵 2. Explain MVC. Difference with MVT.
+
+MVC: Model, View, Controller.
+MVT: Model, View, Template.
+In Django the Controller is handled by the framework, so developers use MVT.
+
+🔵 3. What are Models, Views, Templates?
+
+Model → Database
+View → Logic
+Template → UI
+
+🔵 4. Role of urls.py?
+
+Maps URLs to views.
+
+🟦 Virtual Environment
+🔵 5. What is a virtual environment? Why use it?
+
+Isolated environment to avoid dependency conflicts.
+
+🔵 6. Commands for venv?
+
+Create: python -m venv env
+Activate: Win → env\Scripts\activate
+Linux → source env/bin/activate
+
+🔵 7. What if we don’t use venv?
+
+Projects may break due to version conflicts.
+
+🟦 Django Installation
+🔵 8. Install Django?
+
+pip install django
+
+🔵 9. Create project?
+
+django-admin startproject projectname
+
+🔵 10. Create app?
+
+python manage.py startapp appname
+
+🔵 11. Why makemigrations and migrate?
+
+makemigrations → prepare DB changes
+migrate → apply them
+
+🟦 URL Mapping
+🔵 12. Use of path()?
+
+Maps URL to a view.
+
+🔵 13. Why include()?
+
+To include app-level URL files.
+
+🔵 14. Multiple urls.py possible?
+
+Yes, each app can have its own.
+
+🟦 Response / Render / Redirect
+🔵 15. What is HttpResponse?
+
+Returns plain/manual responses.
+
+🔵 16. What is render()?
+
+Renders an HTML template with data.
+
+🔵 17. What is redirect()?
+
+Redirects to another URL after actions like create/update/delete.
+
+🟦 Templates & Static
+🔵 18. Configure templates?
+
+Add templates path in TEMPLATES['DIRS'].
+
+🔵 19. Configure static files?
+
+Define STATIC_URL and STATICFILES_DIRS.
+
+🔵 20. Static files examples?
+
+CSS, JS, images.
+
+🟦 DTL (Django Template Language)
+🔵 21. Purpose of {% extends %}?
+
+For inheriting a base template.
+
+🔵 22. What is {% block %}?
+
+Defines replaceable sections.
+
+🔵 23. What is {% include %}?
+
+Imports reusable template components.
+
+🔵 24. What is {% load static %}?
+
+Allows use of static files in templates.
+
+🔵 25. IF and FOR syntax?
+
+{% if %}...{% endif %}
+{% for i in data %}...{% endfor %}
+
+🔵 26. What is context?
+
+Dictionary of data passed to template.
+
+🟦 Models, ORM & Admin
+🔵 27. What is a model?
+
+Python class representing a database table.
+
+🔵 28. What is ORM?
+
+Allows database operations using Python instead of SQL.
+
+🔵 29. Create table using Django?
+
+Define model → makemigrations → migrate.
+
+🔵 30. Register model in admin?
+
+admin.site.register(Model)
+
+🔵 31. Customize admin panel?
+
+Use ModelAdmin with list_display.
+
+🟦 CRUD Operations
+🔵 32. What is CRUD?
+
+Create, Read, Update, Delete operations.
+
+🔵 33. Update record using ORM?
+obj = Model.objects.get(id=1)
+obj.field = value
+obj.save()
+
+🔵 34. Delete record using ORM?
+
+Model.objects.get(id=1).delete()
+
+🟦 DRF & API
+🔵 35. What is an API?
+
+A way for two systems to communicate.
+
+🔵 36. What is DRF? Why use it?
+
+A Django library for building APIs quickly with serializers, authentication, etc.
+
+🔵 37. What is a Serializer?
+
+Converts model instances to JSON and vice versa.
+
+🔵 38. Serializer vs ModelSerializer?
+
+Serializer → manual fields
+ModelSerializer → auto fields from model
+
+🔵 39. What is APIView?
+
+Class-based view for API methods like GET, POST, PUT, DELETE.
+
+🔵 40. Use of GET, POST, PUT, DELETE?
+
+GET → Read
+POST → Create
+PUT → Update
+DELETE → Remove
+
+🔵 41. What is Postman?
+
+API testing tool.
+
+🔵 42. Steps to create CRUD API?
+
+Create model → serializer → views → URLs → test in Postman.
+
+🔵 43. How to test APIs in Postman?
+
+Choose method → enter URL → send → check response.
+
+🔵 44. POST request failing — how to debug?
+
+Check serializer errors, required fields, request body, and server logs.
