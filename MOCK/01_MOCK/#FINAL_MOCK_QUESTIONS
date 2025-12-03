@@ -1,197 +1,200 @@
-🔵 1. What is Django? Why is it high-level?
+✅ Django Basic & Architecture (MVT / MVC)
+1. What is Django? Why is it called a high-level web framework?
 
-Django is a Python web framework that provides built-in tools like ORM, admin, authentication — that’s why it's called high-level.
+Django is a Python web framework that provides many built-in features like ORM, admin, authentication.
+It’s called high-level because it handles most things automatically, reducing developer effort.
 
-🔵 2. Explain MVC. Difference with MVT.
+2. Explain MVC architecture. How is it different from MVT in Django?
 
-MVC: Model, View, Controller.
-MVT: Model, View, Template.
-In Django the Controller is handled by the framework, so developers use MVT.
+MVC = Model, View, Controller.
+MVT = Model, View, Template.
+In Django, the Controller part is handled by the framework, so developers only manage M, V, and T.
 
-🔵 3. What are Models, Views, Templates?
+3. What are Models, Views, and Templates in Django?
 
-Model → Database
-View → Logic
-Template → UI
+Model → Database structure
+View → Business logic
+Template → HTML UI
 
-🔵 4. Role of urls.py?
+4. What is the role of urls.py in the MVT structure?
 
-Maps URLs to views.
+It maps incoming URLs to their respective view functions.
 
-🟦 Virtual Environment
-🔵 5. What is a virtual environment? Why use it?
+✅ Virtual Environment & System Environment
+5. What is a virtual environment? Why do we use it in Django projects?
 
-Isolated environment to avoid dependency conflicts.
+A virtual environment isolates project dependencies and avoids version conflicts.
 
-🔵 6. Commands for venv?
+6. Which command is used to create and activate a virtual environment in Windows/Linux?
 
-Create: python -m venv env
-Activate: Win → env\Scripts\activate
-Linux → source env/bin/activate
+Create → python -m venv env
+Activate Windows → env\Scripts\activate
+Activate Linux → source env/bin/activate
 
-🔵 7. What if we don’t use venv?
+7. What happens if we don’t use a virtual environment for Django development?
 
-Projects may break due to version conflicts.
+Different projects may conflict due to package/version mismatches.
 
-🟦 Django Installation
-🔵 8. Install Django?
+✅ Django Installation & Commands
+8. Which command is used to install Django?
 
 pip install django
 
-🔵 9. Create project?
+9. What is the command to create a new Django project?
 
 django-admin startproject projectname
 
-🔵 10. Create app?
+10. How do you create a new Django app?
 
 python manage.py startapp appname
 
-🔵 11. Why makemigrations and migrate?
+11. Why do we run the command python manage.py makemigrations and migrate?
 
-makemigrations → prepare DB changes
-migrate → apply them
+makemigrations → prepares database changes
+migrate → applies those changes to the database
 
-🟦 URL Mapping
-🔵 12. Use of path()?
+✅ URL Mapping – path & include
+12. What is the use of path() in Django?
 
-Maps URL to a view.
+It maps a specific URL to a view.
 
-🔵 13. Why include()?
+13. Why do we use include() in urls.py?
 
-To include app-level URL files.
+To include app-level URLs and keep the project modular.
 
-🔵 14. Multiple urls.py possible?
+14. Can we have multiple urls.py files in a project? If yes, how?
 
-Yes, each app can have its own.
+Yes, each app can have its own urls.py, and the main urls.py includes them.
 
-🟦 Response / Render / Redirect
-🔵 15. What is HttpResponse?
+✅ HTTP Response, Render, Redirect
+15. What is HttpResponse and when do we use it?
 
-Returns plain/manual responses.
+HttpResponse returns plain text or data without using templates.
 
-🔵 16. What is render()?
+16. What is render()? Why is it used?
 
-Renders an HTML template with data.
+render() loads an HTML template and sends data from the view.
 
-🔵 17. What is redirect()?
+17. What is redirect()? When should we use it instead of render()?
 
-Redirects to another URL after actions like create/update/delete.
+redirect() sends the user to another URL, usually after form submissions or CRUD operations.
 
-🟦 Templates & Static
-🔵 18. Configure templates?
+✅ Templates & Static Files
+18. How do you configure a templates folder in Django?
 
-Add templates path in TEMPLATES['DIRS'].
+Add the templates folder path inside TEMPLATES['DIRS'] in settings.py.
 
-🔵 19. Configure static files?
+19. How do you configure static files in Django?
 
-Define STATIC_URL and STATICFILES_DIRS.
+Set STATIC_URL and STATICFILES_DIRS in settings.py.
 
-🔵 20. Static files examples?
+20. What are static files? Give examples.
 
-CSS, JS, images.
+Files not generated dynamically → CSS, JS, Images.
 
-🟦 DTL (Django Template Language)
-🔵 21. Purpose of {% extends %}?
+✅ Django Template Language (DTL)
+21. What is the purpose of {% extends %} in templates?
 
-For inheriting a base template.
+To inherit a base template.
 
-🔵 22. What is {% block %}?
+22. What is {% block %} and why do we use it?
 
-Defines replaceable sections.
+To define editable sections in templates.
 
-🔵 23. What is {% include %}?
+23. What is {% include %} in Django templates?
 
-Imports reusable template components.
+Used to include reusable components like navbar/footer.
 
-🔵 24. What is {% load static %}?
+24. What is {% load static %} and when do we use it?
 
-Allows use of static files in templates.
+Used to load static files like CSS, JS, images.
 
-🔵 25. IF and FOR syntax?
+25. How do you write an if condition and for loop in Django templates?
 
-{% if %}...{% endif %}
-{% for i in data %}...{% endfor %}
+If → {% if condition %} ... {% endif %}
+For → {% for i in data %} ... {% endfor %}
 
-🔵 26. What is context?
+26. What is the use of context in the render() function?
 
-Dictionary of data passed to template.
+To pass data from view to template.
 
-🟦 Models, ORM & Admin
-🔵 27. What is a model?
+✅ Models, ORM & Admin Panel
+27. What is a model in Django? Where do we define it?
 
-Python class representing a database table.
+A model represents a database table.
+Defined in models.py.
 
-🔵 28. What is ORM?
+28. What is ORM? How does Django ORM work?
 
-Allows database operations using Python instead of SQL.
+ORM allows us to interact with the database using Python instead of SQL.
 
-🔵 29. Create table using Django?
+29. How do you create a table in the database using Django?
 
-Define model → makemigrations → migrate.
+Create model → makemigrations → migrate.
 
-🔵 30. Register model in admin?
+30. How do you register a model in the Django admin panel?
 
-admin.site.register(Model)
+Use admin.site.register(ModelName) in admin.py.
 
-🔵 31. Customize admin panel?
+31. How can we customize fields displayed in the Django admin panel?
 
-Use ModelAdmin with list_display.
+Use ModelAdmin class with list_display.
 
-🟦 CRUD Operations
-🔵 32. What is CRUD?
+✅ CRUD Operations
+32. What are CRUD operations? Mention all CRUD operations using Django views.
 
-Create, Read, Update, Delete operations.
+CRUD → Create, Read, Update, Delete.
+Handled using ORM operations in views.
 
-🔵 33. Update record using ORM?
+33. How do you update an existing record using Django ORM?
 obj = Model.objects.get(id=1)
 obj.field = value
 obj.save()
 
-🔵 34. Delete record using ORM?
-
+34. How do you delete a record from the database using Django ORM?
 Model.objects.get(id=1).delete()
 
-🟦 DRF & API
-🔵 35. What is an API?
+✅ API & Django REST Framework — CRUD API
+35. What is an API?
 
-A way for two systems to communicate.
+An API allows two systems to communicate.
 
-🔵 36. What is DRF? Why use it?
+36. What is Django REST Framework (DRF) and why is it used?
 
-A Django library for building APIs quickly with serializers, authentication, etc.
+DRF is used to build APIs easily with serializers, authentication, and API views.
 
-🔵 37. What is a Serializer?
+37. What is a Serializer in DRF?
 
-Converts model instances to JSON and vice versa.
+Converts Django objects to JSON and JSON to Python data.
 
-🔵 38. Serializer vs ModelSerializer?
+38. Difference between Serializer and ModelSerializer.
 
-Serializer → manual fields
-ModelSerializer → auto fields from model
+Serializer → fields defined manually
+ModelSerializer → fields auto-generated from model
 
-🔵 39. What is APIView?
+39. What is APIView?
 
-Class-based view for API methods like GET, POST, PUT, DELETE.
+A class-based view for handling API requests like GET, POST, PUT, DELETE.
 
-🔵 40. Use of GET, POST, PUT, DELETE?
+40. What are GET, POST, PUT, DELETE methods used for in API?
 
 GET → Read
 POST → Create
 PUT → Update
 DELETE → Remove
 
-🔵 41. What is Postman?
+41. What is Postman and why do we use it?
 
-API testing tool.
+A tool to test APIs.
 
-🔵 42. Steps to create CRUD API?
+42. Explain how to create a CRUD API for a To-Do project using DRF.
 
-Create model → serializer → views → URLs → test in Postman.
+Create model → create serializer → create API view → add URLs → test in Postman.
 
-🔵 43. How to test APIs in Postman?
+43. How do you test API endpoints using Postman?
 
-Choose method → enter URL → send → check response.
+Choose method → enter URL → add data → send → check response.
 
-🔵 44. POST request failing — how to debug?
+44. If a POST request is failing, how do you debug it?
 
-Check serializer errors, required fields, request body, and server logs.
+Check serializer errors, required fields, JSON body, and server logs.
