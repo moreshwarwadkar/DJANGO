@@ -1,14 +1,74 @@
 ✅ Django Basic & Architecture (MVT / MVC)
-1. What is Django? Why is it called a high-level web framework?
 
-Django is a Python web framework that provides many built-in features like ORM, admin, authentication.
-It’s called high-level because it handles most things automatically, reducing developer effort.
+1. What is Django? Why is it called a high-level web framework?
+- Django is a Python web framework that provides many built-in features like ORM, admin, authentication.
+- It’s called high-level because it handles most things automatically, reducing developer effort.
 
 2. Explain MVC architecture. How is it different from MVT in Django?
 
-MVC = Model, View, Controller.
-MVT = Model, View, Template.
-In Django, the Controller part is handled by the framework, so developers only manage M, V, and T.
+✔ MVC Architecture (Model–View–Controller)
+
+MVC is a popular design pattern used for building web applications.
+It separates an application into three components:
+
+Model
+- Represents the data and business logic.
+- Interacts with the database.
+
+View
+- Represents the UI or what the user sees.
+- Displays data from the Model.
+
+Controller
+- Acts as a bridge between Model and View.
+- Handles user input and decides which View to show.
+- Controls the flow of the application.
+
+In simple words:
+Model = Data
+View = UI
+Controller = Request handling and application logic
+
+✔ MVT Architecture in Django (Model–View–Template)
+
+Django follows MVT, which is very similar to MVC, but with small changes:
+
+Model
+- Same as MVC
+- Handles database interactions.
+
+View
+- Contains the business logic.
+- Processes request and returns response.
+- Works like a "Controller" in MVC.
+
+Template
+- The HTML part (UI).
+- Used to display data to the user.
+
+Important difference:
+👉 Django handles the "Controller" part automatically using its URL Dispatcher and framework internals.
+So in MVT, we do not manually write a Controller.
+
+✔ Key Differences: MVC vs MVT (Interview Table Format)
+
+| MVC                                                                  | MVT (Django)                                                   |
+| -------------------------------------------------------------------- | -------------------------------------------------------------- |
+| Has Model, View, Controller                                          | Has Model, View, Template                                      |
+| Controller handles user input and communication between Model & View | Django automatically handles controller work using URL routing |
+| View = UI                                                            | Template = UI                                                  |
+| Developer writes the Controller                                      | Developer writes Views only (no controller needed)             |
+| Common in frameworks like Laravel, Spring, Rails                     | Used only in Django                                            |
+
+
+
+✔ Interview-Short Answer (30 seconds)
+- “MVC consists of Model, View, and Controller.
+- Django follows MVT, which is almost similar, but instead of a Controller, Django uses a Template and handles the controller part internally. 
+- In MVT, the View contains the business logic, the Model manages data, and the Template handles presentation. 
+- The main difference is that Django automatically manages the controller, so developers write only Models, Views, and Templates.”
+
+==================================================================
 
 3. What are Models, Views, and Templates in Django?
 
