@@ -66,8 +66,59 @@ CREATE URL FOR `tasks view` : </br>
 <img width="1920" height="1080" alt="Screenshot 2025-12-06 081636" src="https://github.com/user-attachments/assets/31bb60db-0b15-4e2d-820b-a1f84a3399a2" /></br></br>
 
 
+`---ADD FEW RECORDS BY USING SHELL ---`</br></br>
+
+----- SO NOW WE HAVE TO CHECK IS IT WORKING?</br>
+
+- Run The Project : `python manage.py runserver` </br>
+- Open This Link and Check the Output : `http://127.0.0.1:8000/api/tasks/` </br>
+- Here you will see your all added records. </br>
+- Then Copy This URL : `http://127.0.0.1:8000/api/tasks/` </br>
+<img width="1920" height="1080" alt="Screenshot 2025-12-06 082142" src="https://github.com/user-attachments/assets/57ae21b0-0112-4dd0-8e92-98d43b3828fb" /> </br></br>
+
+- Go To Postaman </br>
+
+Paste this link, select the GET method, and click Send. You will see all the inserted records at the bottom of Screen. </br>
+<img width="1920" height="1080" alt="Screenshot 2025-12-06 082440" src="https://github.com/user-attachments/assets/664844a4-8fc0-4114-aee0-27e8298d0fd4" /> </br></br>
+
+--- HERE READ OPERATION IS COMPLETE ----------------------------------------------------</br></br></br></br>
+
+---------- CREATE OPERATION ----------</br></br>
+
+FIRST IMPORT : </br></br>
+
+- import io</br>
+  👉 Used to convert raw byte data into a stream object, so JSONParser can read it.</br></br>
+  
+- from rest_framework.parsers import JSONParser</br>
+  👉 Used to convert incoming JSON request data into Python dictionary format.</br></br>
+
+- from django.views.decorators.csrf import csrf_exempt</br>
+  👉 Used to disable CSRF security for this API view so POST/PUT/DELETE requests can work without a CSRF token.</br></br>
+
+WRITE FOLLOWING CODE IN `views.py` FILE :</br>
+
+<img width="1920" height="1080" alt="Screenshot 2025-12-06 090855" src="https://github.com/user-attachments/assets/8b7a14b9-20ac-44e8-8094-756e6fb1577f" /></br></br>
+
+- OPEN `serializers.py` File and Write Following Create Code :</br>
+
+<img width="1920" height="1080" alt="Screenshot 2025-12-06 091146" src="https://github.com/user-attachments/assets/eac6225d-7e98-4244-b3c0-6aa5c323ede0" /></br></br>
 
 
+GO TO POSTMAN : </br>
+
+- Pest Same URL</br>
+- Select `POST` Method</br>
+- Go To: `Body`, then Go To: `raw` Write Data What You want to Insert.</br>
+- Click on `POST` Button</br>
+- Success Msg Will Be Display : {"msg":"Data Created Successfully"}</br>
+<img width="1920" height="1080" alt="Screenshot 2025-12-06 091651" src="https://github.com/user-attachments/assets/5c3b45d5-8e4b-4c63-85e4-1a7c7ec4624a" /></br></br>
+
+
+
+--- HERE READ OPERATION IS COMPLETE ----------------------------------------------------</br></br></br></br>
+
+---------- CREATE OPERATION ----------</br></br>
 
 
 
