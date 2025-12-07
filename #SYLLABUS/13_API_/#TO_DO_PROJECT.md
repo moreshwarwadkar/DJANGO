@@ -130,6 +130,10 @@ GO TO POSTMAN : </br>
 
 <img width="1920" height="1080" alt="Screenshot 2025-12-07 162708" src="https://github.com/user-attachments/assets/bfae7582-6e2c-4820-a70c-e02298d7587f" /> </br></br>
 
+- CREATE A LINK : </br>
+
+<img width="1920" height="1080" alt="Screenshot 2025-12-07 165047" src="https://github.com/user-attachments/assets/07a6576e-a7bc-4e2e-9d3c-5558d6b39bfc" /> </br></br>
+
 
 --- HERE UPDATE OPERATION IS COMPLETE ----------------------------------------------------</br></br></br></br>
 
