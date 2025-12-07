@@ -120,5 +120,24 @@ GO TO POSTMAN : </br>
 
 ---------- UPDATE OPERATION ----------</br></br>
 
+- WRITE FOLLOWING CODE IN VIEWS:</br>
+
+<img width="1920" height="1080" alt="Screenshot 2025-12-07 162504" src="https://github.com/user-attachments/assets/3f5c534c-4727-4e2a-b1f4-9d5ec78bc9b3" /></br></br>
+
+<img width="1920" height="1080" alt="Screenshot 2025-12-07 162514" src="https://github.com/user-attachments/assets/fc8d327d-b3f9-4328-b4d7-c6a722273724" /></br></br>
+
+- WRITE FOLLOWING CODE IN `serializers.py` File.</br></br>
+
+<img width="1920" height="1080" alt="Screenshot 2025-12-07 162708" src="https://github.com/user-attachments/assets/bfae7582-6e2c-4820-a70c-e02298d7587f" /> </br></br>
 
 
+--- HERE UPDATE OPERATION IS COMPLETE ----------------------------------------------------</br></br></br></br>
+
+---------- DELETE OPERATION ----------</br></br>
+
+- WRITE FOLLOWING CODE IN VIEW:</br>
+
+<img width="1920" height="1080" alt="Screenshot 2025-12-07 164517" src="https://github.com/user-attachments/assets/c685ff7f-5693-4b12-81c0-5b834f89e551" /></br></br>
+
+
+--- HERE DELETE OPERATION IS COMPLETE ----------------------------------------------------</br></br></br></br>
