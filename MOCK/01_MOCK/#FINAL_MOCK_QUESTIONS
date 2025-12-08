@@ -374,7 +374,8 @@ ModelSerializer → fields auto-generated from model
 
 39. What is APIView?
 
-A class-based view for handling API requests like GET, POST, PUT, DELETE.
+- A class-based view for handling API requests like GET, POST, PUT, DELETE.
+- APIView is a class provided by Django REST Framework (DRF) that is used to create class-based API views.
 
 40. What are GET, POST, PUT, DELETE methods used for in API?
 
@@ -385,7 +386,8 @@ DELETE → Remove
 
 41. What is Postman and why do we use it?
 
-A tool to test APIs.
+- Postman is an API testing tool used to send requests to APIs and check their responses.
+- It allows us to test GET, POST, PUT, PATCH, and DELETE requests without writing frontend code.
 
 42. Explain how to create a CRUD API for a To-Do project using DRF.
 
@@ -397,4 +399,5 @@ Choose method → enter URL → add data → send → check response.
 
 44. If a POST request is failing, how do you debug it?
 
-Check serializer errors, required fields, JSON body, and server logs.
+- To debug a failing POST request, I check the API URL, request body, headers, status code, 
+serializer validation errors, and server logs, and test the request again using Postman.
